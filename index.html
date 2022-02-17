@@ -20,7 +20,7 @@
         <div id="app" v-cloak>
 
             <div class="container-fluid m-2">
-                <div class="row row-cols-1">
+                <div v-if="!erroreVerificato" class="row row-cols-1">
 
                     <div class="col">
                         <div class="fs-6 info" :class="{'text-danger':info}">{{message}}</div>
@@ -35,6 +35,10 @@
                     </div>
 
                 </div>
+                <div v-else>
+                    Errore 404!
+                </div>
+               
             </div>
 
         </div>
