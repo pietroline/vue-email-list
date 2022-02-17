@@ -1,0 +1,15 @@
+[v-cloak] {
+    display: none;
+}
+
+.view{
+    display: block;
+}
+
+.hide{
+    display: none;
+}
+
+.info{
+    height: 2rem;
+}
