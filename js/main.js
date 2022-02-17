@@ -5,7 +5,6 @@ const vue = new Vue(
         data:{
             emailArray: [],
             erroreVerificato: false,
-            view_hide: false,
             message: "",
             info: false,
         },
@@ -34,11 +33,6 @@ const vue = new Vue(
               
 
             },
-
-            draws(){
-                this.view_hide = !this.view_hide;
-            }
-
         }
         
     }

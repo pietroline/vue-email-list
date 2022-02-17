@@ -24,14 +24,13 @@
 
                     <div class="col">
                         <div class="fs-6 info" :class="{'text-danger':info}">{{message}}</div>
-                        <div>
-                            <button class="btn btn-primary" @click="createEmailArray()">Genera array email</button>
-                            <button class="btn btn-secondary" @click="draws()">Mostra/nascondi email</button>
-                        </div>
+                        <button class="btn btn-primary" @click="createEmailArray()">Genera array email</button>
+                            
+
                     </div>
                     
                     <div class="col m-2">
-                        <ol :class="view_hide?'view':'hide'">
+                        <ol>
                             <!-- i-1 perchè indice i di v-for va da 1 a email.length, mentre array email ha elementi in posizione 0 a email.length -1 -->
                             <li v-for="i in emailArray.length"> {{emailArray[i-1]}}</li>
                         </ol>
